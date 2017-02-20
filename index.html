@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVG</title>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000"
+     preserveAspectRatio="xMidYMid meet">
+    <path d="M 500, 350 m 20, 0 h 200 a 20 20 0 0 1 20 20 v 125 a 20 20 0 0 1 -20 20 h -75 v 20 h 75 v 20 h -200 v -20 h 75 v -20 h -75 a 20 20 0 0 1 -20 -20 v -125 a 20 20 0 0 1 20 -20 z"
+          stroke="black" stroke-width="2" fill="#BBBBBB"></path>
+    <path d="M 520, 370 h 200 v 125 h -200 v -125 z" stroke="black" stroke-width="2" fill="url(#grad1)"></path>
+
+    <defs>
+
+    <radialGradient id="grad1" cx="50%" cy="50%" r="150%" fx="150%" fy="105%">
+        <stop offset="0%" stop-color="#000"></stop>
+        <stop offset="50%" stop-color="#111111"></stop>
+        <stop offset="51%" stop-color="#444444"></stop>
+        <stop offset="100%" stop-color="#AAAAAA"></stop>
+    </radialGradient>
+
+    </defs>
+
+</svg>
+</body>
+</html>
