@@ -8,12 +8,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000"
      preserveAspectRatio="xMidYMid meet">
     <path d="M 100, 70 h 800 a 20 20 0 0 1 20 20 v 750 a 20 20 0 0 1 -20 20 h -800 a 20 20 0 0 1 -20 -20 v -750 a 20 20 0 0 1 20 -20 z" stroke="black" stroke-width="2" fill="url(#grad2)"></path>
-    <path d="M 150, 110 h 700 a 20 20 0 0 1 20 20 v 670 a 20 20 0 0 1 -20 20 h -700 a 20 20 0 0 1 -20 -20 v -670 a 20 20 0 0 1 20 -20 z" stroke="black" stroke-width="2" fill="none"></path>
+    <path d="M 150, 110 h 700 a 20 20 0 0 1 20 20 v 670 a 20 20 0 0 1 -20 20 h -700 a 20 20 0 0 1 -20 -20 v -670 a 20 20 0 0 1 20 -20 z" stroke="black" stroke-width="2" fill="url(#patt)"></path>
     <path d="M 370, 350 m 20, 0 h 200 a 20 20 0 0 1 20 20 v 125 a 20 20 0 0 1 -20 20 h -75 v 20 h 75 v 20 h -200 v -20 h 75 v -20 h -75 a 20 20 0 0 1 -20 -20 v -125 a 20 20 0 0 1 20 -20 z"
-          stroke="black" stroke-width="2" fill="#BBBBBB"></path>
+          stroke="black" stroke-width="2" fill="url(#grad2)"></path>
     <path d="M 390, 370 h 200 v 125 h -200 v -125 z" stroke="black" stroke-width="2" fill="url(#grad1)"></path>
 
     <defs>
+        <linearGradient id="circlegradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="black"></stop>
+            <stop offset="100%" stop-color="grey"></stop>
+        </linearGradient>
         <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stop-color="white"></stop>
             <stop offset="100%" stop-color="black"></stop>
@@ -24,7 +28,9 @@
         <stop offset="51%" stop-color="#444444"></stop>
         <stop offset="100%" stop-color="#AAAAAA"></stop>
     </radialGradient>
-
+        <pattern id="patt" width="35" height="35" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+            <circle cx="15" cy="15" r="10" fill="url(#circlegradient)" stroke="black" stroke-width="1"></circle>
+        </pattern>
     </defs>
 
 </svg>
